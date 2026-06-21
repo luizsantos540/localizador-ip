@@ -60,13 +60,13 @@ def localizar_ip(ip):
         print(f"Provedor:     {provedor}")
         print("-" * 30)
 
-        # Salva as informações organizadas diretamente no banco de dados
+        
         salvar_no_banco(ip_alvo, pais, estado, cidade, provedor)
     else:
         print("\nNão foi possível localizar este endereço IP.")
 
 
-# Fluxo principal do programa
+
 inicializar_banco()
 ip_usuario = solicitar_ip()
 localizar_ip(ip_usuario)
